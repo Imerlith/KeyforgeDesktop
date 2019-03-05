@@ -13,8 +13,8 @@ public class Creature extends Card {
     private int armor;
     private List<BonusAction> listOfActions;
 
-    public Creature(int id, String name, int bonusAember, int chainsGain, Enums.Houses house, Image frontImage, int position , int power , int armor) {
-        super(id, name, bonusAember, chainsGain, house, frontImage);
+    public Creature(int id, String name, int bonusAember, int chainsGain, Enums.Houses house, Image frontImage, int position , int power , int armor, String traits,boolean isMaverick) {
+        super(id, name, bonusAember, chainsGain, house, frontImage, traits , isMaverick);
         this.position = position;
         this.hp = power;
         this.power=power;
